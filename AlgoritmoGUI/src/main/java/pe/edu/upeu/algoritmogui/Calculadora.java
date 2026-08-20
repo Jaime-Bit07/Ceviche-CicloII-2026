@@ -1,7 +1,6 @@
 package pe.edu.upeu.algoritmogui;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -12,20 +11,21 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-import java.util.Scanner;
-
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class Calculadora extends Application {
     Label resultado;
     HBox hb;
     @Override
     public void start(Stage stage) throws IOException {
         Label mensaje = new Label("Bienvenido a JavaFX");
         mensaje.setStyle("-fx-font-size: 18px;");
-
         TextField txtNombre=new TextField();
         Button boton = new Button("Saludar");
+
+
+
+
         boton.setOnAction(evento ->
                 mensaje.setText("¡Hola !"+txtNombre.getText()));
         calc();
