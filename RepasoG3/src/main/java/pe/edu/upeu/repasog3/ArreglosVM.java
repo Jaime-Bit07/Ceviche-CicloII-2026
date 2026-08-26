@@ -1,6 +1,6 @@
 package pe.edu.upeu.repasog3;
 
-public class ArreglosVM {
+public class  ArreglosVM {
 
     public static void meses(){
         String[] mes={"Enero", "Febrero", "Marzo", "Abril", "Mayo",
