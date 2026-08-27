@@ -16,6 +16,7 @@ public class Principal {
         for (Estado e:Estado.values()){
             System.out.println(e.getDescripcion()+"\t"+e.name());
         }
+        System.out.println(" ");
 
     }
 }
