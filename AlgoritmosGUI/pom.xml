@@ -5,13 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>pe.edu.upeu</groupId>
-    <artifactId>AlgoritmoGUI</artifactId>
+    <artifactId>AlgoritmosGUI</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>AlgoritmoGUI</name>
+    <name>AlgoritmosGUI</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.12.1</junit.version>
+
+        <gluonfx.target>host</gluonfx.target>
+        <gluonfx.plugin.version>1.0.29</gluonfx.plugin.version>
+
     </properties>
 
     <dependencies>
@@ -51,10 +55,41 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <source>21</source>
-                    <target>21</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
+
+
+            <plugin>
+                <groupId>com.gluonhq</groupId>
+                <artifactId>gluonfx-maven-plugin</artifactId>
+                <version>${gluonfx.plugin.version}</version>
+                <configuration>
+                    <target>${gluonfx.target}</target>
+                    <mainClass>pe.edu.upeu.algoritmosgui.Launcher</mainClass>
+                    <appIdentifier>pe.edu.upeu.algoritmosgui</appIdentifier>
+                    <!-- Ponlo a true la primera vez: verás qué está pasando -->
+                    <verbose>true</verbose>
+                    <!-- Descomenta si no puedes usar la variable GRAALVM_HOME
+                    <graalvmHome>/ruta/a/graalvm</graalvmHome>
+                    -->
+                    <!-- Activa esto solo si el binario no arranca por falta de GPU -->
+                    <!-- <enableSWRendering>true</enableSWRendering> -->
+                    <!-- CRÍTICO: Registrar clases que JavaFX instancia por reflexión -->
+                    <reflectionList>
+                        <list>pe.edu.upeu.algoritmosgui.HelloApplication</list>
+                        <list>pe.edu.upeu.algoritmosgui.MatrizTriangular</list>
+                    </reflectionList>
+                    <releaseConfiguration>
+                        <vendor>Mi Empresa S.A.</vendor>
+                        <description>Mi aplicación nativa</description>
+                        <version>1.0.0</version>
+                    </releaseConfiguration>
+                </configuration>
+            </plugin>
+
+
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
@@ -64,7 +99,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>pe.edu.upeu.algoritmogui/pe.edu.upeu.algoritmogui.Calculadora</mainClass>
+                            <mainClass>pe.edu.upeu.algoritmosgui/pe.edu.upeu.algoritmosgui.MatrizTriangular</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
@@ -77,4 +112,17 @@
             </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>desktop</id>
+            <activation><activeByDefault>true</activeByDefault></activation>
+            <properties><gluonfx.target>host</gluonfx.target></properties>
+        </profile>
+        <profile>
+            <id>android</id>
+            <properties><gluonfx.target>android</gluonfx.target></properties>
+        </profile>
+    </profiles>
+
 </project>
