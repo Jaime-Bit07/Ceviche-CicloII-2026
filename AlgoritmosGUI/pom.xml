@@ -16,6 +16,7 @@
         <gluonfx.target>host</gluonfx.target>
         <gluonfx.plugin.version>1.0.29</gluonfx.plugin.version>
 
+
     </properties>
 
     <dependencies>
@@ -59,7 +60,6 @@
                     <target>17</target>
                 </configuration>
             </plugin>
-
 
             <plugin>
                 <groupId>com.gluonhq</groupId>
