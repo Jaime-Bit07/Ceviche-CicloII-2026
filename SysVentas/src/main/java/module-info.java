@@ -5,6 +5,7 @@ module pe.edu.upeu.sysventas {
     requires org.controlsfx.controls;
     requires com.dlsc.formsfx;
     requires static lombok;
+    requires jakarta.validation;
 
     opens pe.edu.upeu.sysventas to javafx.fxml;
     exports pe.edu.upeu.sysventas;

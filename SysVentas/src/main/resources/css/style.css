@@ -1,0 +1,83 @@
+/* =========================
+   BOTON BASE (btn)
+   ========================= */
+
+.btn {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16 8 16;
+    -fx-border-radius: 4;
+    -fx-background-radius: 4;
+    -fx-cursor: hand;
+}
+
+/* =========================
+   PRIMARY
+   ========================= */
+
+.btn-primary {
+    -fx-background-color: #0d6efd;
+    -fx-text-fill: white;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #0b5ed7;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #0a58ca;
+}
+
+/* =========================
+   SUCCESS
+   ========================= */
+
+.btn-success {
+    -fx-background-color: #198754;
+    -fx-text-fill: white;
+}
+
+.btn-success:hover {
+    -fx-background-color: #157347;
+}
+
+.btn-success:pressed {
+    -fx-background-color: #146c43;
+}
+
+/* =========================
+   DANGER
+   ========================= */
+
+.btn-danger {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #bb2d3b;
+}
+
+.btn-danger:pressed {
+    -fx-background-color: #b02a37;
+}
+
+/* =========================
+   WARNING
+   ========================= */
+
+.btn-warning {
+    -fx-background-color: #ffc107;
+    -fx-text-fill: black;
+}
+
+.btn-warning:hover {
+    -fx-background-color: #ffca2c;
+}
+
+.btn-warning:pressed {
+    -fx-background-color: #ffcd39;
+}
+
+
+
