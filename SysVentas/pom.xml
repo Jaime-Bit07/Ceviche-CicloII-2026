@@ -115,7 +115,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>pe.edu.upeu.sysventas/pe.edu.upeu.sysventas.SysVentas</mainClass>
+                            <m2ainClass>pe.edu.upeu.sysventas/pe.edu.upeu.sysventas.SysVentas</m2ainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
