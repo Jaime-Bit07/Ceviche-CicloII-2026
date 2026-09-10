@@ -9,7 +9,7 @@ public abstract class AbstractJpRepository<T,ID> implements ICrudGenericoReposit
     protected final List<T> data=new ArrayList<>();
     protected  abstract  ID getId(T entity);
     protected abstract  void setId(T entity, ID id);
-    private abstract  ID generateId();
+    protected abstract  ID generateId();
 
     @Override
     public T save(T entity) {
