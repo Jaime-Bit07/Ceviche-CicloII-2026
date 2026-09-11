@@ -21,4 +21,14 @@ public class MarcaRepository extends AbstractJpRepository<Marca, Long>{
     protected Long generateId() {
         return sequence++;
     }
+
+    @Override
+    public Marca update(Long aLong, Marca marca) {
+        return null;
+    }
+
+    @Override
+    public void delete(Long aLong) {
+
+    }
 }

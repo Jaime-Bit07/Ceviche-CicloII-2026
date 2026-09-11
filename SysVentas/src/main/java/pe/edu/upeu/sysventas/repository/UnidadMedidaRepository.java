@@ -7,19 +7,28 @@ public class UnidadMedidaRepository extends AbstractJpRepository<UnidMedida, Lon
 
 
     @Override
-    protected Long getId(UnidMedida entity) {
-        return entity.getIdUnidad();
+    public UnidMedida update(Long aLong, UnidMedida unidMedida) {
+        return null;
     }
 
     @Override
-    protected void setId(UnidMedida entity, Long id) {
-        entity.setIdUnidad(id);
+    public void delete(Long aLong) {
+
+    }
+
+    @Override
+    protected Long getId(UnidMedida entity) {
+        return 0L;
+    }
+
+    @Override
+    protected void setId(UnidMedida entity, Long aLong) {
 
     }
 
     @Override
     protected Long generateId() {
-        return sequence++;
+        return 0L;
     }
 }
 

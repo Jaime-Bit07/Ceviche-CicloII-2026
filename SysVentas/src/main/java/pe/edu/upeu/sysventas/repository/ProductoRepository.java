@@ -21,5 +21,15 @@ public class ProductoRepository extends AbstractJpRepository<Producto, Long> {
     protected Long generateId() {
         return sequence++;
     }
+
+    @Override
+    public Producto update(Long aLong, Producto producto) {
+        return null;
+    }
+
+    @Override
+    public void delete(Long aLong) {
+
+    }
 }
 
