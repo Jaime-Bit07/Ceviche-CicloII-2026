@@ -7,16 +7,6 @@ public class UnidadMedidaRepository extends AbstractJpRepository<UnidMedida, Lon
 
 
     @Override
-    public UnidMedida update(Long aLong, UnidMedida unidMedida) {
-        return null;
-    }
-
-    @Override
-    public void delete(Long aLong) {
-
-    }
-
-    @Override
     protected Long getId(UnidMedida entity) {
         return 0L;
     }
