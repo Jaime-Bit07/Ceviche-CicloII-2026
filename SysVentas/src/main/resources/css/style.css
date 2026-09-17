@@ -79,7 +79,7 @@
     -fx-background-color: #ffcd39;
 }
 .root {
-    -fx-background-color: linear-gradient(to bottom right, #667eea, #764ba2);
+    -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #ffffff 0.0%, #ffffff 100.0%);
 }
 .container {
     -fx-background-color: white;
