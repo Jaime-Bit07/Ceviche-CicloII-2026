@@ -33,7 +33,7 @@
    ========================= */
 
 .btn-success {
-    -fx-background-color: #020000;
+    -fx-background-color: #198754;
     -fx-text-fill: white;
 }
 
@@ -78,43 +78,18 @@
 .btn-warning:pressed {
     -fx-background-color: #ffcd39;
 }
+
+/* Contenedor principal */
 .root {
-    -fx-background-color: linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, #ffffff 0.0%, #ffffff 100.0%);
-}
-.container {
-    -fx-background-color: white;
-    -fx-background-radius: 15px;
-    -fx-padding: 40px;
+    -fx-background-color: #f5f7fa;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.welcome-label {
-    -fx-font-size: 28px;
+/* Texto de bienvenida */
+#welcomeText {
+    -fx-font-size: 24px;
     -fx-font-weight: bold;
-    -fx-text-fill: #333333;
+    -fx-text-fill: #cf84a5;
 }
-
-.btn {
-    -fx-font-size: 16px;
-    -fx-font-weight: bold;
-    -fx-padding: 12px 30px;
-    -fx-background-radius: 8px;
-    -fx-cursor: hand;
-}
-
-.btn-success {
-    -fx-background-color: #00b894;
-    -fx-text-fill: white;
-}
-
-.btn-success:hover {
-    -fx-background-color: #00a383;
-    -fx-scale-x: 1.05;
-    -fx-scale-y: 1.05;
-}
-
-.btn-success:pressed {
-    -fx-background-color: #008f72;
-}
-
 
 

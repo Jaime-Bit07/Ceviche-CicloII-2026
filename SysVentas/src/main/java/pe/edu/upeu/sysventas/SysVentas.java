@@ -14,13 +14,14 @@ public class SysVentas extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        Screen screen= Screen.getPrimary();
-        Rectangle2D dimen=screen.getBounds();
+        Screen screen=Screen.getPrimary();
 
         AppContext appContext=AppContext.getInstance();
+        Rectangle2D dimen=screen.getBounds();
+
         FXMLLoader fxmlLoader = new FXMLLoader(SysVentas.class.getResource("/view/main_producto.fxml"));
         fxmlLoader.setControllerFactory(appContext::getBean);
-        Scene scene = new Scene(fxmlLoader.load(),dimen.getWidth(), dimen.getHeight()-60);
+        Scene scene = new Scene(fxmlLoader.load(), dimen.getWidth(), dimen.getHeight()-60);
         scene.getStylesheets().add(getClass().getResource("/css/style.css").toExternalForm());
         stage.setTitle("Hello!");
         stage.setScene(scene);

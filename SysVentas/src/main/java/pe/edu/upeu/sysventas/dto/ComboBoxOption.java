@@ -5,15 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-@Data
 @AllArgsConstructor
+@Data
 public class ComboBoxOption {
     String key;
     String value;
 
     @Override
-    public String toString(){
+    public String toString() {
         return value;
     }
-
 }

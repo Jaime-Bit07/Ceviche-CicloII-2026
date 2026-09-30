@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.ventaautos.controller.VentaAutosController" styleClass="app-root">
+  <top><VBox spacing="18" styleClass="top-area">
+    <HBox alignment="CENTER_LEFT" spacing="12">
+      <VBox spacing="3"><Label text="AUTONOVA  /  CONCESIONARIA" styleClass="eyebrow"/><Label text="Panel de ventas" styleClass="page-title"/></VBox>
+      <Region HBox.hgrow="ALWAYS"/><Label text="●  SISTEMA OPERATIVO" styleClass="status-pill"/>
+    </HBox>
+    <HBox spacing="14">
+      <VBox styleClass="metric-card"><Label text="VEHÍCULOS EN CATÁLOGO" styleClass="metric-caption"/><Label fx:id="lblResumenAutos" text="0" styleClass="metric-number"/></VBox>
+      <VBox styleClass="metric-card"><Label text="VENTAS REGISTRADAS" styleClass="metric-caption"/><Label fx:id="lblResumenVentas" text="0" styleClass="metric-number"/></VBox>
+    </HBox>
+  </VBox></top>
+  <center><TabPane tabClosingPolicy="UNAVAILABLE" styleClass="main-tabs">
+    <tabs>
+      <Tab text="Inventario">
+        <content><HBox spacing="18" styleClass="tab-content">
+          <VBox spacing="12" prefWidth="275" minWidth="260" styleClass="form-card">
+            <Label text="Ficha del vehículo" styleClass="section-title"/><Label text="Selecciona un registro para editarlo." styleClass="help-text"/>
+            <Label text="Placa *" styleClass="field-label"/><TextField fx:id="txtPlaca" promptText="ABC-123" />
+            <Label text="Marca *" styleClass="field-label"/><TextField fx:id="txtMarca" promptText="Toyota" />
+            <Label text="Modelo *" styleClass="field-label"/><TextField fx:id="txtModelo" promptText="Corolla" />
+            <GridPane hgap="10" vgap="8">
+              <columnConstraints><ColumnConstraints hgrow="ALWAYS"/><ColumnConstraints hgrow="ALWAYS"/></columnConstraints>
+              <Label text="Año" styleClass="field-label" GridPane.rowIndex="0" GridPane.columnIndex="0"/><Label text="Precio (USD)" styleClass="field-label" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+              <TextField fx:id="txtAnio" promptText="2025" GridPane.rowIndex="1" GridPane.columnIndex="0"/><TextField fx:id="txtPrecio" promptText="25000" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+              <Label text="Stock disponible" styleClass="field-label" GridPane.rowIndex="2" GridPane.columnIndex="0"/><TextField fx:id="txtStock" promptText="1" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            </GridPane>
+            <VBox spacing="8" styleClass="form-actions">
+              <Button text="Guardar vehículo" onAction="#guardarVehiculo" styleClass="button-primary" maxWidth="Infinity"/>
+              <HBox spacing="8"><Button text="Nuevo" onAction="#nuevoVehiculo" styleClass="button-secondary" HBox.hgrow="ALWAYS"/><Button text="Eliminar" onAction="#eliminarVehiculo" styleClass="button-delete" HBox.hgrow="ALWAYS"/></HBox>
+            </VBox>
+            <Label text="* Placa, marca y modelo son obligatorios." styleClass="help-text" wrapText="true"/>
+          </VBox>
+          <VBox spacing="12" HBox.hgrow="ALWAYS" styleClass="table-card">
+            <HBox alignment="CENTER_LEFT" spacing="12"><VBox spacing="3"><Label text="Inventario de vehículos" styleClass="section-title"/><Label text="Administra modelos, precios y unidades disponibles." styleClass="help-text"/></VBox><Region HBox.hgrow="ALWAYS"/><TextField fx:id="txtBuscar" promptText="Buscar marca, modelo o placa" prefWidth="245"/></HBox>
+            <TableView fx:id="tablaVehiculos" VBox.vgrow="ALWAYS" columnResizePolicy="CONSTRAINED_RESIZE_POLICY">
+              <columns><TableColumn fx:id="colPlaca" text="Placa"/><TableColumn fx:id="colMarca" text="Marca"/><TableColumn fx:id="colModelo" text="Modelo"/><TableColumn fx:id="colAnio" text="Año"/><TableColumn fx:id="colPrecio" text="Precio (USD)"/><TableColumn fx:id="colStock" text="Stock"/></columns>
+              <placeholder><Label text="No hay vehículos registrados."/></placeholder>
+            </TableView>
+            <Label text="Para vender una unidad, selecciona un vehículo aquí y continúa en la pestaña Ventas." styleClass="help-text" wrapText="true"/>
+          </VBox>
+        </HBox></content>
+      </Tab>
+      <Tab text="Ventas">
+        <content><VBox spacing="16" styleClass="tab-content">
+          <VBox spacing="4"><Label text="Registrar una venta" styleClass="section-title"/><Label text="Elige primero un vehículo en Inventario. Cada registro descuenta una unidad del stock." styleClass="help-text"/></VBox>
+          <HBox spacing="12" alignment="BOTTOM_LEFT" styleClass="sale-form">
+            <VBox spacing="6" HBox.hgrow="ALWAYS"><Label text="Nombre del cliente" styleClass="field-label"/><TextField fx:id="txtCliente" promptText="Nombre y apellido"/></VBox>
+            <Button text="Registrar venta del vehículo seleccionado" onAction="#registrarVenta" styleClass="button-primary"/>
+          </HBox>
+          <VBox spacing="12" VBox.vgrow="ALWAYS" styleClass="table-card">
+            <VBox spacing="3"><Label text="Historial de ventas" styleClass="section-title"/><Label text="Consulta las operaciones registradas en esta sesión." styleClass="help-text"/></VBox>
+            <TableView fx:id="tablaVentas" VBox.vgrow="ALWAYS" columnResizePolicy="CONSTRAINED_RESIZE_POLICY">
+              <columns><TableColumn fx:id="colCodigoVenta" text="Código"/><TableColumn fx:id="colFechaVenta" text="Fecha"/><TableColumn fx:id="colClienteVenta" text="Cliente"/><TableColumn fx:id="colVehiculoVenta" text="Vehículo"/><TableColumn fx:id="colCantidadVenta" text="Cant."/><TableColumn fx:id="colTotalVenta" text="Total (USD)"/></columns>
+              <placeholder><Label text="Las ventas que registres aparecerán aquí."/></placeholder>
+            </TableView>
+          </VBox>
+          <Label text="Prototipo académico: los datos se mantienen en memoria y se reinician al cerrar la aplicación." styleClass="help-text"/>
+        </VBox></content>
+      </Tab>
+    </tabs>
+  </TabPane></center>
+</BorderPane>
