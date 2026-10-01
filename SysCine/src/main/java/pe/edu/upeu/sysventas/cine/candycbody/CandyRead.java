@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class CandyRead {
 
+    //Agregacion
     public ArrayList<Candy> obtenerTodos() {
         return new ArrayList<>();
     }
