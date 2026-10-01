@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="7a2266c8-470e-4de0-8888-c9a3cdbe4dda" name="Changes" comment="" />
-=======
     <list default="true" id="7a2266c8-470e-4de0-8888-c9a3cdbe4dda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/CandyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/CandyController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/candycbody/CandyRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/candycbody/CandyRead.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinebasic/CandyBasic.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinebasic/CandyCBasic.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinerun/SysCine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinerun/SysCine.java" afterDir="false" />
->>>>>>> 57e2e342ace6b664d62355e373f9c5a5e7c959e3
     </list>
->>>>>>> 3966e0519aa4d6fa5c30b020e47f8957667ccdb9
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
