@@ -5,12 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a2266c8-470e-4de0-8888-c9a3cdbe4dda" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/CandyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/CandyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/candycbody/CandyRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/candycbody/CandyRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinebasic/CandyBasic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinebasic/CandyCBasic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/SysVentas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/SysVentas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/Candy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/Candy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/CandyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinecontroller/CandyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/candycbody/CandyDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cine/candycbody/CandyDelete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinerun/SysCine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/cinerun/SysCine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/components/ColumnInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/components/ColumnInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/components/ComboBoxAutoComplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/components/ComboBoxAutoComplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/components/ToltipCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/components/ToltipCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/config/AppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/config/AppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/controller/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/enums/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/enums/Menus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pe/edu/upeu/sysventas/model/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/cineview/main_cine.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/cineview/main_cine.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/main_producto.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/cineview/main_cine.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cineview/main_cine.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/SysVentas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/SysVentas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/components/ColumnInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/components/ComboBoxAutoComplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/components/ComboBoxAutoComplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/config/AppContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/controller/ProductoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/enums/Menus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/enums/TipoDocumento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/enums/TipoProducto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/enums/TipoTab.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/model/Acceso$AccesoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/model/Acceso.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/model/Cliente$ClienteBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/model/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/model/Producto$ProductoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/model/Producto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/repository/ProductoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pe/edu/upeu/sysventas/service/impl/ProductoServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/view/main_producto.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,35 +78,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.CandyCBasic.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SysCine.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SysVentas.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.All in SysVentas.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.pe.edu.upeu.sysventas in SysVentas.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Dev-Sesion04&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Jaime Chura-C2/Ciclo 2-G3/Ceviche-CicloII-2026/SysCine&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CandyCBasic.executor": "Run",
+    "Application.SysCine.executor": "Run",
+    "Application.SysVentas.executor": "Run",
+    "JUnit.All in SysVentas.executor": "Run",
+    "JUnit.pe.edu.upeu.sysventas in SysVentas.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Dev-Sesion04",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Jaime/UPeU/CICLO 2/Programacion Orientada a Objetos/Ceviche-CicloII-2026/SysCine",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "to.speed.mode.migration.done": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.All in SysVentas">
+}]]></component>
+  <component name="RunManager">
+    <configuration name="SysCine" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pe.edu.upeu.sysventas.cinerun.SysCine" />
+      <module name="SysCine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pe.edu.upeu.sysventas.cinerun.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in SysVentas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SysCine" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,6 +144,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SysCine" />
         <item itemvalue="JUnit.All in SysVentas" />
         <item itemvalue="JUnit.pe.edu.upeu.sysventas in SysVentas" />
       </list>

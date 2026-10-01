@@ -14,6 +14,6 @@ module pe.edu.upeu.sysventas {
 
     opens pe.edu.upeu.sysventas.cine to javafx.fxml, javafx.base;
     exports pe.edu.upeu.sysventas.cinerun;
-    exports pe.edu.upeu.sysventas.cinebasic;
+    opens pe.edu.upeu.sysventas.cinecontroller to javafx.base, javafx.fxml;
 
 }

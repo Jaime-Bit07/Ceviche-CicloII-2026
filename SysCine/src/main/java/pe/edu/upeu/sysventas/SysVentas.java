@@ -6,7 +6,6 @@ import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import pe.edu.upeu.sysventas.config.AppContext;
 
 import java.io.IOException;
 
@@ -16,11 +15,10 @@ public class SysVentas extends Application {
 
         Screen screen=Screen.getPrimary();
 
-        AppContext appContext=AppContext.getInstance();
+
         Rectangle2D dimen=screen.getBounds();
 
         FXMLLoader fxmlLoader = new FXMLLoader(SysVentas.class.getResource("/view/main_producto.fxml"));
-        fxmlLoader.setControllerFactory(appContext::getBean);
         Scene scene = new Scene(fxmlLoader.load(), dimen.getWidth(), dimen.getHeight()-60);
         scene.getStylesheets().add(getClass().getResource("/css/style.css").toExternalForm());
         stage.setTitle("Hello!");
