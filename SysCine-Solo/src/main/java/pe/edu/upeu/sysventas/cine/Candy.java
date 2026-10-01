@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Candy {
-    
+
     private Long idCandy;
     private String nombre;
     private String tipo;
