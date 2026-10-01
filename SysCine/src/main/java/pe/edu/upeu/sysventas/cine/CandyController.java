@@ -8,48 +8,41 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
+//Dependencias
 import pe.edu.upeu.sysventas.cine.candycbody.CandyCreate;
 import pe.edu.upeu.sysventas.cine.candycbody.CandyDelete;
 import pe.edu.upeu.sysventas.cine.candycbody.CandyRead;
 import pe.edu.upeu.sysventas.cine.candycbody.CandyUpdate;
 
 public class CandyController {
-
     @FXML
     private TableView<Candy> tablaCandys;
-
     @FXML
     private TableColumn<Candy, String> colNombre;
-
     @FXML
     private TableColumn<Candy, String> colTipo;
-
     @FXML
     private TableColumn<Candy, Double> colPrecio;
-
     @FXML
     private TableColumn<Candy, Integer> colStock;
-
     @FXML
     private TextField txtNombre;
-
     @FXML
     private TextField txtTipo;
-
     @FXML
     private TextField txtPrecio;
-
     @FXML
     private TextField txtStock;
-
     @FXML
     private Label lblMensaje;
 
+    //Dependencias
     private final CandyCreate candyCreate = new CandyCreate();
     private final CandyRead candyRead = new CandyRead();
     private final CandyUpdate candyUpdate = new CandyUpdate();
     private final CandyDelete candyDelete = new CandyDelete();
 
+    //Agregacion
     private ObservableList<Candy> productos;
 
     @FXML
