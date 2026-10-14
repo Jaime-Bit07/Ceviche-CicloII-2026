@@ -80,13 +80,14 @@
             <version>5.0.0</version>
         </dependency>
 
-        <!-- Source: https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+
+        <!-- Source: https://mvnrepository.com/artifact/com.h2database/h2 -->
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.7.13</version>
-            <scope>compile</scope>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.4.240</version>
         </dependency>
+
         <!-- ===== HIKARICP — pool de conexiones ===== -->
         <dependency>
             <groupId>com.zaxxer</groupId>
