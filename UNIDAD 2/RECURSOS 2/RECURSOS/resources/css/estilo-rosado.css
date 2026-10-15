@@ -1,0 +1,426 @@
+/* Estilos CSS para JavaFX - Rosa */
+@import url("style.css");
+/* Estilos base de la raíz */
+.root {
+    -fx-base: #fce7f3;
+    -fx-background: #fdf2f8;
+    -fx-control-inner-background: #fce7f3;
+    -fx-accent: #ec4899;
+    -fx-focus-color: #ec4899;
+}
+
+/* Labels y texto */
+.label {
+    -fx-text-fill: #be185d;
+    -fx-font-weight: normal;
+}
+
+/* Campos de entrada */
+.text-field, .combo-box, .table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 6px;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #ec4899;
+    -fx-background-color: #ffffff;
+    -fx-border-width: 2px;
+}
+
+/* Área de texto */
+.text-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 6px;
+    -fx-min-height: 35px;
+}
+
+.text-area:focused {
+    -fx-border-color: #ec4899;
+    -fx-border-width: 2px;
+}
+
+.text-area .content {
+    -fx-background-color: #ffffff;
+    -fx-padding: 8px;
+}
+
+/* Tablas */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color: #ec4899;
+    -fx-border-color: #ec4899;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #be185d;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #ec4899;
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #fce7f3;
+}
+
+.table-view .table-row-cell:selected:hover {
+    -fx-background-color: #be185d;
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell {
+    -fx-border-color: #f9a8d4;
+}
+
+/* Botones */
+.button {
+    -fx-background-color: #ec4899;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 10px 20px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #be185d;
+}
+
+.button:pressed {
+    -fx-background-color: #9d174d;
+}
+
+.button:disabled {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: #ffffff;
+    -fx-opacity: 0.65;
+}
+
+/* Botones pequeños para tablas */
+.button.table-button {
+    -fx-font-size: 11px;
+    -fx-padding: 4px 8px;
+    -fx-min-width: 50px;
+    -fx-pref-width: 50px;
+    -fx-max-width: 50px;
+    -fx-min-height: 25px;
+    -fx-pref-height: 25px;
+    -fx-max-height: 25px;
+}
+
+/* Botón Edit específico */
+.button.edit-button {
+    -fx-background-color: #7c3aed;
+    -fx-text-fill: white;
+}
+
+.button.edit-button:hover {
+    -fx-background-color: #6d28d9;
+}
+
+/* Botón Delete específico */
+.button.delete-button {
+    -fx-background-color: #dc2626;
+    -fx-text-fill: white;
+}
+
+.button.delete-button:hover {
+    -fx-background-color: #b91c1c;
+}
+
+/* Contenedor para botones en las celdas de la tabla */
+.button-container {
+    -fx-spacing: 3px;
+    -fx-alignment: CENTER;
+}
+
+.button.secondary {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ec4899;
+    -fx-border-color: #ec4899;
+    -fx-border-width: 2px;
+}
+
+.button.secondary:hover {
+    -fx-background-color: #ec4899;
+    -fx-text-fill: white;
+}
+
+.button.secondary:pressed {
+    -fx-background-color: #be185d;
+    -fx-text-fill: white;
+}
+
+/* CheckBox */
+.check-box {
+    -fx-text-fill: #be185d;
+}
+
+.check-box .box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 4px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #ec4899;
+    -fx-border-color: #ec4899;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.check-box:hover .box {
+    -fx-border-color: #ec4899;
+}
+
+/* RadioButton */
+.radio-button {
+    -fx-text-fill: #be185d;
+}
+
+.radio-button .radio {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+}
+
+.radio-button:selected .radio {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ec4899;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #ec4899;
+}
+
+.radio-button:hover .radio {
+    -fx-border-color: #ec4899;
+}
+
+/* ProgressBar */
+.progress-bar {
+    -fx-background-color: #fce7f3;
+    -fx-border-color: #f9a8d4;
+    -fx-border-radius: 10px;
+    -fx-padding: 2px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #ec4899;
+    -fx-background-radius: 8px;
+}
+
+/* Slider */
+.slider {
+    -fx-background-color: #fce7f3;
+}
+
+.slider .track {
+    -fx-background-color: #f9a8d4;
+    -fx-background-radius: 10px;
+}
+
+.slider .thumb {
+    -fx-background-color: #ec4899;
+    -fx-background-radius: 12px;
+    -fx-padding: 6px;
+}
+
+.slider .thumb:hover {
+    -fx-background-color: #be185d;
+}
+
+/* MenuBar y MenuItem */
+.menu-bar {
+    -fx-background-color: #ec4899;
+    -fx-padding: 5px;
+}
+
+.menu-bar .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.menu-item {
+    -fx-background-color: #fbcfe8;
+    -fx-text-fill: #be185d;
+    -fx-padding: 8px 16px;
+}
+
+.menu-item:focused {
+    -fx-background-color: #ec4899;
+    -fx-text-fill: white;
+}
+
+.menu-item:hover {
+    -fx-background-color: #f9a8d4;
+}
+
+/* TabPane */
+.tab-pane {
+    -fx-tab-min-height: 36px;
+    -fx-background-color: #ffffff;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #fdf2f8;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-text-fill: #be185d;
+    -fx-background-radius: 6px 6px 0 0;
+    -fx-padding: 8px 16px;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #ec4899;
+    -fx-text-fill: white;
+    -fx-border-color: #ec4899;
+}
+
+.tab-pane .tab:hover {
+    -fx-background-color: #fce7f3;
+}
+
+.tab-pane .tab:selected:hover {
+    -fx-background-color: #be185d;
+}
+
+.tab-pane .tab-content-area {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 0 2px 2px 2px;
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 6px;
+}
+
+.scroll-bar {
+    -fx-background-color: #fdf2f8;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #fce7f3;
+    -fx-background-radius: 6px;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #ec4899;
+    -fx-background-radius: 6px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #be185d;
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #9d174d;
+}
+
+/* TitledPane */
+.titled-pane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}
+
+.titled-pane .title {
+    -fx-background-color: #ec4899;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 16px;
+    -fx-background-radius: 6px 6px 0 0;
+}
+
+.titled-pane .content {
+    -fx-background-color: #ffffff;
+    -fx-padding: 16px;
+}
+
+/* ComboBox específico */
+.combo-box .arrow-button {
+    -fx-background-color: #ec4899;
+    -fx-background-radius: 0 4px 4px 0;
+}
+
+.combo-box .arrow {
+    -fx-background-color: white;
+}
+
+/* TextField y TextArea placeholder */
+.text-field, .text-area {
+    -fx-prompt-text-fill: #6c757d;
+}
+
+/* DatePicker */
+.date-picker {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 6px;
+}
+
+.date-picker:focused {
+    -fx-border-color: #ec4899;
+}
+
+.date-picker .arrow-button {
+    -fx-background-color: #ec4899;
+    -fx-background-radius: 0 4px 4px 0;
+}
+
+.date-picker .arrow {
+    -fx-background-color: white;
+}
+
+/* Spinner */
+.spinner {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #f9a8d4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 6px;
+}
+
+.spinner:focused {
+    -fx-border-color: #ec4899;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #ec4899;
+}
+
+.spinner .increment-arrow,
+.spinner .decrement-arrow {
+    -fx-background-color: white;
+}

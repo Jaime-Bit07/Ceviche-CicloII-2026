@@ -54,6 +54,7 @@ public class AppContext {
         registrar(IUnidadMedidaService.class, new UnidadMedidaServiceImp(getBean(UnidadMedidaRepository.class)));
 
         registrar(IUsuarioService.class, new UsuarioServiceImp(getBean(UsuarioRepository.class)));
+        registrar(IMenuMenuItemDao.class, new MenuMenuItemDaoImp());
 
     }
 
@@ -62,7 +63,7 @@ public class AppContext {
     // El FXMLLoader los busca aquí a través de setControllerFactory().
     private void registrarControladores() {
         //registrar(LoginController.class, new LoginController(getBean(IUsuarioService.class)));
-        registrar(MainguiController.class, new MainguiController());
+        registrar(MainguiController.class, new MainguiController(getBean(IMenuMenuItemDao.class)));
         registrar(ProductoController.class,
                 new ProductoController(
                         getBean(IMarcaService.class),

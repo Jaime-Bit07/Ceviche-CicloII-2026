@@ -1,0 +1,60 @@
+name: Android APK
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'AlgoritmosGUI/**'
+      - '.github/workflows/android.yml'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+
+      # Instala la build de GraalVM de Gluon (necesaria por gluonfx-maven-plugin).
+      # GRAALVM_HOME queda apuntando aquí; el plugin la usa para invocar native-image.
+      - name: Setup Gluon's GraalVM
+        uses: gluonhq/setup-graalvm@master
+        with:
+          graalvm: '22.1.0.1-Final'
+          jdk: 'java17'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Java "normal" para ejecutar Maven; queda antes en el PATH que GraalVM.
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Android NDK
+        uses: nttld/setup-ndk@v1
+        id: setup-ndk
+        with:
+          ndk-version: r28c
+          add-to-path: false
+
+      - name: Install native libraries
+        run: |
+          sudo apt-get update
+          sudo apt install -y libasound2-dev libavcodec-dev libavformat-dev libavutil-dev libgl-dev libgtk-3-dev libpango1.0-dev libxtst-dev
+
+      - name: Build APK
+        working-directory: AlgoritmosGUI
+        run: |
+          chmod +x mvnw
+          export ANDROID_SDK=$ANDROID_HOME
+          ./mvnw -Pandroid gluonfx:build gluonfx:package
+        env:
+          ANDROID_NDK: ${{ steps.setup-ndk.outputs.ndk-path }}
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: AlgoritmosGUI-apk
+          path: AlgoritmosGUI/target/gluonfx/aarch64-android/gvm/*.apk
+          if-no-files-found: error

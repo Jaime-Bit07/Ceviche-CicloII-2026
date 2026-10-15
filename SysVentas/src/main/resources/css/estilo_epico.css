@@ -1,0 +1,115 @@
+/* estilo-epico.css - Tema Gaming/Moderno */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #0f0c29, #302b63, #24243e);
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* --- Efecto Tarjeta de Cristal (Glassmorphism) --- */
+.card-pane {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 20, 0, 0, 10);
+}
+
+/* --- Títulos --- */
+.label-header {
+    -fx-text-fill: white;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, #00d2ff, 10, 0.5, 0, 0); /* Resplandor Azul */
+}
+
+.label-normal {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-size: 14px;
+}
+
+/* --- Campos de Texto Futuristas --- */
+.text-field, .password-field, .combo-box {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-border-color: #3a7bd5;
+    -fx-border-width: 0 0 2 0; /* Solo borde inferior */
+    -fx-prompt-text-fill: #aaaaaa;
+}
+
+.text-field:focused, .password-field:focused, .combo-box:focused {
+    -fx-border-color: #00d2ff;
+    -fx-background-color: rgba(0, 0, 0, 0.5);
+    -fx-effect: dropshadow(gaussian, #00d2ff, 5, 0.0, 0, 0);
+}
+
+/* --- Botones Épicos --- */
+.button {
+    -fx-background-color: linear-gradient(to right, #00d2ff, #3a7bd5);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(58, 123, 213, 0.4), 5, 0, 0, 2);
+    -fx-transition: all 0.3s;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #3a7bd5, #00d2ff);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(gaussian, #00d2ff, 15, 0.3, 0, 0); /* Resplandor al pasar mouse */
+}
+
+.button:pressed {
+    -fx-background-color: #005cbf;
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+/* Botón Secundario (Rojo/Cancelar/Salir) */
+.button-danger {
+    -fx-background-color: linear-gradient(to right, #eb3349, #f45c43);
+    -fx-effect: dropshadow(three-pass-box, rgba(235, 51, 73, 0.4), 5, 0, 0, 2);
+}
+.button-danger:hover {
+    -fx-background-color: linear-gradient(to right, #f45c43, #eb3349);
+    -fx-effect: dropshadow(gaussian, #eb3349, 15, 0.3, 0, 0);
+}
+
+/* Botón Verde (Acción Positiva) */
+.button-success {
+    -fx-background-color: linear-gradient(to right, #11998e, #38ef7d);
+}
+.button-success:hover {
+    -fx-effect: dropshadow(gaussian, #38ef7d, 15, 0.3, 0, 0);
+}
+
+/* --- Tablas Estilizadas --- */
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255,255,255,0.1);
+}
+.table-view .column-header-background {
+    -fx-background-color: rgba(0,0,0,0.5);
+}
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+.table-view .table-cell {
+    -fx-text-fill: white;
+    -fx-alignment: CENTER-LEFT;
+}
+.table-row-cell {
+    -fx-background-color: transparent;
+}
+.table-row-cell:odd {
+    -fx-background-color: rgba(255,255,255,0.02);
+}
+.table-row-cell:hover {
+    -fx-background-color: rgba(0, 210, 255, 0.2);
+}
+.table-row-cell:selected {
+    -fx-background-color: rgba(0, 210, 255, 0.4);
+}

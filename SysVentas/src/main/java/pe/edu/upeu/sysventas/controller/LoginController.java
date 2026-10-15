@@ -14,6 +14,7 @@ import javafx.stage.Stage;
 import lombok.RequiredArgsConstructor;
 import pe.edu.upeu.sysventas.SysVentas;
 import pe.edu.upeu.sysventas.config.AppContext;
+import pe.edu.upeu.sysventas.dto.SessionManager;
 import pe.edu.upeu.sysventas.model.Usuario;
 import pe.edu.upeu.sysventas.service.IUsuarioService;
 
@@ -48,6 +49,10 @@ public class LoginController {
 
     public void abrirPantalla(ActionEvent e, Usuario u){
         try {
+
+            SessionManager.getInstance().setUserPerfil(u.getIdPerfil().getNombre());
+            SessionManager.getInstance().setUserName(u.getUsuario());
+            SessionManager.getInstance().setUserId(u.getIdUsuario());
 
             Screen screen=Screen.getPrimary();
 

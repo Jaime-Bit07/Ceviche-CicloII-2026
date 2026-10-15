@@ -1,0 +1,30 @@
+2026-10-15 14:32:49.339836-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; se esperaba "EXPLAIN, EXECUTE"
+Syntax error in SQL statement "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; expected "EXPLAIN, EXECUTE"; SQL statement:
+ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)
+    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1) [42001-240]
+2026-10-15 14:33:02.645855-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; se esperaba "EXPLAIN, EXECUTE"
+Syntax error in SQL statement "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; expected "EXPLAIN, EXECUTE"; SQL statement:
+ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)
+    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1) [42001-240]
+2026-10-15 14:33:13.060378-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; se esperaba "EXPLAIN, EXECUTE"
+Syntax error in SQL statement "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; expected "EXPLAIN, EXECUTE"; SQL statement:
+ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)
+    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1) [42001-240]
+2026-10-15 14:33:45.770895-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; se esperaba "EXPLAIN, EXECUTE"
+Syntax error in SQL statement "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; expected "EXPLAIN, EXECUTE"; SQL statement:
+ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)
+    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1) [42001-240]
+2026-10-15 14:36:18.047449-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; se esperaba "EXPLAIN, EXECUTE"
+Syntax error in SQL statement "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; expected "EXPLAIN, EXECUTE"; SQL statement:
+ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)
+    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1) [42001-240]
+2026-10-15 14:36:39.800194-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; se esperaba "EXPLAIN, EXECUTE"
+Syntax error in SQL statement "[*]ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)\000a    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1)"; expected "EXPLAIN, EXECUTE"; SQL statement:
+ERGE INTO usuario (id_usuario, usuario, clave, estado, id_perfil) KEY (id_usuario)
+    VALUES (2, 'Ceviche', '2007', 'ACTIVO', 1) [42001-240]
