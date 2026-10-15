@@ -1,15 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controller.LoginController">
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pe.edu.upeu.sysventas.controller.LoginController">
    <children>
-      <VBox layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <VBox layoutX="14.0" layoutY="14.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <AnchorPane>
                <children>
-                  <Circle fill="DODGERBLUE" layoutX="34.0" layoutY="34.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#ff5e1f" layoutX="42.0" layoutY="34.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#1fff2f" layoutX="94.0" layoutY="35.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="DODGERBLUE" layoutX="147.0" layoutY="34.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Label layoutX="210.0" layoutY="21.0" text="Login SysVentas">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="102.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <image>
+                        <Image url="@../img/secrecy-icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <GridPane vgap="5.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <AnchorPane style="-fx-border-radius: 3; -fx-border-color: #b5abd1;" GridPane.columnSpan="2147483647">
+                     <children>
+                        <Label layoutX="70.0" layoutY="8.0" text="Usuario" />
+                        <TextField fx:id="txtUsuario" layoutX="134.0" layoutY="2.0" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </GridPane.margin>
+                  </AnchorPane>
+                  <AnchorPane style="-fx-border-radius: 3; -fx-border-color: #b5abd1;" GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
+                     <children>
+                        <Label layoutX="73.0" layoutY="8.0" text="Clave" />
+                        <PasswordField fx:id="txtClave" layoutX="134.0" layoutY="2.0" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets left="8.0" right="8.0" />
+                     </GridPane.margin>
+                  </AnchorPane>
+               </children>
+            </GridPane>
+            <AnchorPane>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <children>
+                  <GridPane layoutX="14.0" layoutY="14.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#login" text="Ingresar">
+                           <GridPane.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </GridPane.margin></Button>
+                        <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#logout" text="Cerrar" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </GridPane.margin></Button>
+                     </children>
+                  </GridPane>
                </children>
             </AnchorPane>
          </children>

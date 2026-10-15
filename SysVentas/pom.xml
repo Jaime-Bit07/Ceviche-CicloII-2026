@@ -80,7 +80,6 @@
             <version>5.0.0</version>
         </dependency>
 
-
         <!-- Source: https://mvnrepository.com/artifact/com.h2database/h2 -->
         <dependency>
             <groupId>com.h2database</groupId>

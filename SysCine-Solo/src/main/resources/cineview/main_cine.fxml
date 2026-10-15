@@ -13,7 +13,7 @@
 
 <BorderPane xmlns="http://javafx.com/javafx/21"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="pe.edu.upeu.sysventas.cinecontroller.CandyController">
+            fx:controller="pe.edu.upeu.sysventas.cine.controller.CandyController">
 
     <top>
         <Label text="CRUD Chuche Administrator"

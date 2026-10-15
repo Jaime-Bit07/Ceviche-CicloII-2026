@@ -19,12 +19,13 @@ public class SysVentas extends Application {
         AppContext appContext=AppContext.getInstance();
         Rectangle2D dimen=screen.getBounds();
 
-        FXMLLoader fxmlLoader = new FXMLLoader(SysVentas.class.getResource("/view/maingui.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(SysVentas.class.getResource("/view/login.fxml"));
         fxmlLoader.setControllerFactory(appContext::getBean);
-        Scene scene = new Scene(fxmlLoader.load(), dimen.getWidth(), dimen.getHeight()-60);
+        Scene scene = new Scene(fxmlLoader.load());
         scene.getStylesheets().add(getClass().getResource("/css/style.css").toExternalForm());
-        stage.setTitle("Hello!");
+        stage.setTitle("SysVentas Login!");
         stage.setScene(scene);
+        stage.setResizable(false);
         stage.show();
     }
 }

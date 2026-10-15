@@ -1,14 +1,9 @@
 module pe.edu.upeu.sysventas {
     requires javafx.controls;
     requires javafx.fxml;
-
-    requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
     requires static lombok;
-    requires jakarta.validation;
 
-    opens pe.edu.upeu.sysventas.cine to javafx.fxml, javafx.base;
+    opens pe.edu.upeu.sysventas.cine.controller to javafx.fxml;
+    opens pe.edu.upeu.sysventas.cine.model to javafx.base;
     exports pe.edu.upeu.sysventas.cinerun;
-    opens pe.edu.upeu.sysventas.cinecontroller to javafx.base, javafx.fxml;
-
 }
