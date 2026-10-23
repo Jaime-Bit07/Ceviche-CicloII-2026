@@ -10,11 +10,10 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
-
+@Data
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 public class Venta extends DocumentoComercial{
     //private Long idVenta;
     //private Double preciobase;

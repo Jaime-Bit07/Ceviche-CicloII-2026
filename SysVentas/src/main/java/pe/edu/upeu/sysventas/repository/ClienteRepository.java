@@ -25,7 +25,7 @@ public class ClienteRepository extends AbstractJpaRepository<Cliente, String> {
     @Override
     protected Cliente insert(Connection conn, Cliente e) throws SQLException {
         try (PreparedStatement ps = conn.prepareStatement(
-                "INSERT INTO cliente(dniruc,nombres,rep_legal,tipo_documento, direccion) VALUES(?,?,?,?,?)")) {
+                "INSERT INTO cliente(dniruc,nombres,rep_legal,tipo_documento, direccion) VALUES(?,?,?,?, ?)")) {
             ps.setString(1, e.getDniruc());
             ps.setString(2, e.getNombres());
             ps.setString(3, e.getRepLegal());

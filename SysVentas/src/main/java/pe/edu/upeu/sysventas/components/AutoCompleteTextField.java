@@ -72,4 +72,9 @@ public class AutoCompleteTextField<T>{
     public T getLastSelectedObject() {
         return lastSelectedObject;
     }
+
+    public void clearSelection() {
+        lastSelectedObject = null;
+        entryMenu.hide();
+    }
 }

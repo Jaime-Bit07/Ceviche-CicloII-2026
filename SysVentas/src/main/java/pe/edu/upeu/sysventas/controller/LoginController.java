@@ -13,6 +13,7 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import lombok.RequiredArgsConstructor;
 import pe.edu.upeu.sysventas.SysVentas;
+import pe.edu.upeu.sysventas.components.StageManager;
 import pe.edu.upeu.sysventas.config.AppContext;
 import pe.edu.upeu.sysventas.dto.SessionManager;
 import pe.edu.upeu.sysventas.model.Usuario;
@@ -65,7 +66,7 @@ public class LoginController {
             scene.getStylesheets().add(getClass().getResource("/css/style.css").toExternalForm());
 
             Stage stage= (Stage) ((Node)e.getSource()).getScene().getWindow();
-
+            StageManager.setPrimaryStage(stage);
             stage.setTitle("SysVentas Principal!");
             stage.setX(dimen.getMinX());
             stage.setY(dimen.getMinY());
