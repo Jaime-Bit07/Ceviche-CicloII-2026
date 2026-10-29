@@ -5,6 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 //import pe.edu.upeu.sysventas.dto.comprobante.Comprobante;
 //import pe.edu.upeu.sysventas.dto.comprobante.ItemComprobante;
+import pe.edu.upeu.sysventas.dto.comprobante.Comprobante;
+import pe.edu.upeu.sysventas.dto.comprobante.ItemComprobante;
 import pe.edu.upeu.sysventas.model.Venta;
 import pe.edu.upeu.sysventas.model.VentaDetalle;
 import pe.edu.upeu.sysventas.repository.ICrudGenericoRepository;
@@ -46,7 +48,7 @@ public class VentaServiceImp extends CrudGenericoServiceImp<Venta, Long>
         return camino.toFile();
     }
 
-   /* @Override
+   @Override
     public Comprobante generarComprobante(Venta venta){
         Comprobante b = new Comprobante();
         b.setRucEmisor("10436319172");
@@ -81,7 +83,7 @@ public class VentaServiceImp extends CrudGenericoServiceImp<Venta, Long>
         b.setIgv(total.subtract(b.getOpGravadas()).setScale(2, RoundingMode.HALF_UP));
         b.setTotal(total.setScale(2, RoundingMode.HALF_UP));
         return b;
-    }*/
+    }
 
 
 }

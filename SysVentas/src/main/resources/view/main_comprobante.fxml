@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="pe.edu.upeu.sysventas.controller.MainComprobanteController"
+      spacing="0"
+      >
+
+    <!-- Barra de herramientas-->
+    <ToolBar >
+        <Label text="Comprobante de Pago"/>
+        <Region HBox.hgrow="ALWAYS"/>
+
+        <Button fx:id="btnImprimir"
+                text="🖨  Imprimir"
+                onAction="#onImprimir"
+                style="-fx-background-color: #7f8c8d; -fx-text-fill: white;
+                       -fx-padding: 6 14; -fx-cursor: hand;"/>
+
+        <Button fx:id="btnExportarPdf"
+                text="⬇  Exportar PDF"
+                onAction="#onExportarPdf"
+                style="-fx-background-color: #e74c3c; -fx-text-fill: white;
+                       -fx-font-weight: bold; -fx-padding: 6 14; -fx-cursor: hand;"/>
+    </ToolBar>
+
+    <!--Visor: ScrollPane con fondo gris, contenido inyectado por código-->
+    <ScrollPane fx:id="scrollVisor"
+                fitToWidth="true"
+                VBox.vgrow="ALWAYS"
+                style="-fx-background-color: #e0e0e0;"/>
+
+
+
+</VBox>

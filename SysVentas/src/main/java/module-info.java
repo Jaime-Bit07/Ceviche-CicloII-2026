@@ -14,6 +14,9 @@ module pe.edu.upeu.sysventas {
     requires com.zaxxer.hikari;
     requires java.prefs;
     requires org.jsoup;
+    requires escpos.coffee;
+    requires com.github.librepdf.openpdf;
+    requires java.desktop;
 
 
     opens pe.edu.upeu.sysventas to javafx.fxml;
